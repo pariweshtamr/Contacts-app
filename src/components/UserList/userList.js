@@ -1,14 +1,10 @@
 import axios from 'axios'
 import React from 'react'
 import { useEffect, useState } from 'react'
-import ContactItem from '../../pages/Contact/ContactItem'
 import Popup from '../Popup/Popup'
 import {
   UserListContainer,
   UserListContent,
-  UserListButtons,
-  UserListEditIcon,
-  UserListDeleteIcon,
   UserListItem,
   UserListName,
   UserListEmail,
@@ -72,21 +68,12 @@ const UserList = () => {
                 </div>
               </Popup>
             )}
+
             <UserListItem>
               <UserListContent>
-                {/* <ContactItem contact={contact}></ContactItem> */}
                 <UserListName>{contact.name}</UserListName>
                 <UserListEmail>{contact.email}</UserListEmail>
               </UserListContent>
-
-              <UserListButtons>
-                <UserListEditIcon>
-                  <i className="fas fa-user-edit"></i>
-                </UserListEditIcon>
-                <UserListDeleteIcon>
-                  <i className="fas fa-trash"></i>
-                </UserListDeleteIcon>
-              </UserListButtons>
             </UserListItem>
           </div>
         )

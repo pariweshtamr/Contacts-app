@@ -28,6 +28,7 @@ export const UserListContent = styled.div`
   font-size: 1rem;
   width: 100%;
   display: block;
+  cursor: pointer;
 `
 
 export const UserListName = styled.div`
@@ -39,42 +40,4 @@ export const UserListEmail = styled.div`
   font-size: 0.8rem;
   font-weight: 300;
   color: gray;
-`
-
-export const UserListButtons = styled.div`
-  display: flex;
-  flex-direction: row;
-  cursor: pointer;
-`
-
-export const UserListEditIcon = styled.button`
-  margin: 0 0.5rem;
-  cursor: pointer;
-  appearance: none;
-  border: none;
-  outline: none;
-  background: none;
-  font-size: 1.2rem;
-  background-image: linear-gradient(to right, #ec4899, #8b5cf6);
-  border-radius: 10%;
-
-  &:hover {
-    opacity: 0.6;
-  }
-`
-
-export const UserListDeleteIcon = styled.button`
-  margin: 0 0.5rem;
-  cursor: pointer;
-  appearance: none;
-  border: none;
-  outline: none;
-  background: none;
-  font-size: 1rem;
-  background-image: linear-gradient(to right, crimson, #ec4899);
-  border-radius: 10%;
-
-  &:hover {
-    opacity: 0.6;
-  }
 `
