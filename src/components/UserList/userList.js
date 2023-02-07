@@ -1,14 +1,14 @@
-import axios from 'axios'
-import React from 'react'
-import { useEffect, useState } from 'react'
-import Popup from '../Popup/Popup'
+import axios from "axios"
+import React from "react"
+import { useEffect, useState } from "react"
+import Popup from "../Popup/Popup"
 import {
   UserListContainer,
   UserListContent,
   UserListItem,
   UserListName,
   UserListEmail,
-} from './userListStyles'
+} from "./userListStyles"
 
 const UserList = () => {
   const [contacts, setContacts] = useState([])
@@ -21,7 +21,9 @@ const UserList = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const result = await axios('https://jsonplaceholder.typicode.com/users')
+      const result = await axios.get(
+        "https://jsonplaceholder.typicode.com/users"
+      )
       setContacts(result.data)
       console.log(result.data)
     }
